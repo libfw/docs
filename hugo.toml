@@ -6,6 +6,7 @@ enableGitInfo = false
 
 [params]
   BookSection = "*"
+  BookTheme = "auto"
   BookToC = true
   BookRepo = "https://github.com/libfw/docs"
   BookEditPath = "edit/main/content"

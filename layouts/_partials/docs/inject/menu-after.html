@@ -1,0 +1,15 @@
+<button type="button" class="color-toggle" onclick="fwToggleTheme()"
+        aria-label="Toggle light or dark theme">◐ Light / Dark</button>
+<script>
+  function fwToggleTheme() {
+    var el = document.documentElement;
+    var cur = el.getAttribute('data-theme');
+    if (!cur) {
+      cur = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        ? 'dark' : 'light';
+    }
+    var next = cur === 'dark' ? 'light' : 'dark';
+    el.setAttribute('data-theme', next);
+    try { localStorage.setItem('fw-theme', next); } catch (e) {}
+  }
+</script>
