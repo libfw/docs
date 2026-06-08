@@ -1,0 +1,21 @@
+baseURL = "https://libfw.github.io/docs/"
+languageCode = "en-us"
+title = "libfw"
+theme = "hugo-book"
+enableGitInfo = false
+
+[params]
+  BookSection = "*"
+  BookToC = true
+  BookRepo = "https://github.com/libfw/docs"
+  BookEditPath = "edit/main/content"
+  BookSearch = true
+
+[markup.goldmark.renderer]
+  unsafe = true
+[markup.highlight]
+  noClasses = false
+  style = "github-dark"
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 3
